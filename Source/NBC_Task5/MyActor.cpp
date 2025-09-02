@@ -52,7 +52,6 @@ void AMyActor::Tick(float DeltaTime)
 	if (moveQueue.IsEmpty())//이동 종료
 	{
 		//이동 결산
-		const FVector currentPos = GetActorLocation();
 		UE_LOG(LogTemp, Display, TEXT("===================="));
 		UE_LOG(LogTemp, Warning, TEXT("총 이동 거리 : %f"), totDist);
 		UE_LOG(LogTemp, Warning, TEXT("이벤트 발생 횟수 : %d"), evCnt);
