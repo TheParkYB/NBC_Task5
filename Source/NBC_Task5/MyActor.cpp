@@ -54,7 +54,6 @@ void AMyActor::Tick(float DeltaTime)
 		//이동 결산
 		const FVector currentPos = GetActorLocation();
 		UE_LOG(LogTemp, Display, TEXT("===================="));
-		UE_LOG(LogTemp, Warning, TEXT("최종 좌표 : (%f, %f)"), currentPos.X, currentPos.Y);
 		UE_LOG(LogTemp, Warning, TEXT("총 이동 거리 : %f"), totDist);
 		UE_LOG(LogTemp, Warning, TEXT("이벤트 발생 횟수 : %d"), evCnt);
 		UE_LOG(LogTemp, Display, TEXT("===================="));
